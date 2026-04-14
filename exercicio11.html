@@ -7,12 +7,29 @@
 </head>
 
     <script>
-        let dados = [10, 20, 30, 40, 50]
 
-        for (i = 0; i < dados.length; i++) {
-            console.log(dados[i]);
+        let pilha = [];
+        function push(x) {
+        pilha.push(x);
         }
-
+        function pop() {
+        if (pilha.length === 0) {
+        return 'Pilha vazia';
+        }
+        return pilha.pop();
+        }
+        function peek() {
+        if (pilha.length === 0) {
+        return 'Pilha vazia';
+        }
+        return pilha[pilha.length - 1];
+        }
+        push('A');
+        push('B');
+        push('C');
+        console.log(peek());
+        console.log(pop());
+        console.log(pilha);
 
         
     </script>
