@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
     <script>
@@ -11,15 +12,20 @@
         let dados = [10, 20, 30, 40];
         let valor = 25;
         let posicao = 2;
-        dados.push(0); // abre uma posição no final
+
+        dados.push(0); 
+
+        console.log(dados);
         for (let i = dados.length - 1; i > posicao; i--) {
         dados[i] = dados[i - 1];
+        console.log("Vetor depois da " + (dados.length-i) + "passagem = " + dados);
         }
+
         dados[posicao] = valor;
-        console.log(dados);
+        console.log("Vetor final = " + dados);
         
     </script>
 <body>
-    
+    <h1>Jair</h1>
 </body>
 </html>
